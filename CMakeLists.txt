@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.16)
 project(Lab3_FlexBison CXX)
 set(CMAKE_CXX_STANDARD 17)
 
+set(BISON_EXECUTABLE "C:/msys64/usr/bin/bison.exe")
+set(FLEX_EXECUTABLE "C:/msys64/usr/bin/flex.exe")
+
+
 find_package(BISON REQUIRED)
 find_package(FLEX REQUIRED)
 
@@ -23,5 +27,10 @@ add_executable(calc
         ${FLEX_Lexer_OUTPUTS}
         driver.cpp
         ast.cpp
+        driver.cpp
+        driver.cpp
+        ast.cpp
+        driver.cpp
+        driver.cpp
         driver.cpp
 )
